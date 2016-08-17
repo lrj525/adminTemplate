@@ -1,0 +1,122 @@
+﻿body{font-size:14px;font-family:'Microsoft YaHei';background-color:#edeef2;color:#3b3838;}
+a{text-decoration: none;}
+a:focus, a:hover, a:active { text-decoration: none; }
+
+ul,li,dl,dd,dt{margin:0;list-style:none;}
+.container-fluid{min-width:780px;padding-bottom:30px;}
+.margin_left{margin-left:15px;}
+.margin_top{margin-top:15px;}
+
+.index{background-color:#273238;}
+.index .container-fluid{padding-bottom:0;}
+.index .top_bar{height:70px;background-color:#fff;}
+.index .top_bar .logo{overflow:hidden;display:table;table-layout:fixed;height:70px;}
+.index .top_bar .logo_cell{display:table-cell;vertical-align:middle;height:70px;}
+.index .top_bar .logo img{max-width:400px;max-height:70px;}
+.index .top_bar .account{height:70px;text-align:right;}
+.index .top_bar .account a{color:#7c8594;line-height:70px;}
+.index .main{position:relative;bottom:0;}
+.index .main .left{position:absolute;left:0;top:0;min-height:768px;width:200px;}
+.index .main .right{margin-left:200px;min-height:768px;bottom:0;}
+
+.index .left{padding:15px 0;}
+.index .left dl{}
+.index .left dl dt,.index .left dl dd{height:40px;padding-right:15px;line-height:40px;}
+.index .left dl dt { padding-left:30px;background:url(../images/caret_right.png) 15px center no-repeat;}
+.index .left dl dd { padding-left:45px;}
+.index .left dl dt a,.index .left dl dd a{color:#fff;}
+.index .left dl dt:hover,.index .left dl dd:hover{background-color:#323c42;}
+
+.index .left dl.active dt{background:url(../images/caret_down.png) 15px center no-repeat;}
+.index .left dl.active dt a{color:#e74f05;}
+.index .left dl dd{display:none;}
+.index .left dl.active dd{display:block;}
+.login{background:#44566c;}
+.login .login_c { width: 350px; min-height: 250px; padding: 50px; margin: 100px auto; border-radius: 5px; background: rgba(0,0,0,.4); background: #333\9; filter: alpha(opacity=80)\9;border:1px #666 solid; }
+.login .login_c h2 { padding-bottom: 10px; font: 20px/1.5 "微软雅黑"; color: #fff;text-align:center; }
+.login .login_type { margin-bottom: 10px; }
+.login .login_input { padding: 10px 10px 10px 40px; border: solid 1px #ccc; position: relative; background: 12px 12px no-repeat #fff; z-index: 0; }
+.login .username { border-top-left-radius: 5px; border-top-right-radius: 5px; background-image: url(../images/pic_icon09.gif); }
+
+.login .login_type input { width: 200px; height: 21px; height: 18px\9; line-height: 21px; line-height: 14px\9; padding-top: 3px\9; vertical-align: bottom; border: none 0; background: #fff; font-size: 14px; color: #666; outline: none; }
+.login .password { margin-top: -1px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; background-image: url(../images/pic_icon10.gif); }
+.login .login_type .login_btn { width: 250px; height: 40px; line-height: 40px; border: solid 1px #3c99e0; border-radius: 3px; background: #4d90fe; background-image: -webkit-linear-gradient(top,#4fb2ff,#49a8f1); font-size: 16px; font-weight: bold; color: #fff; outline: none; cursor: pointer; }
+
+.form-control.calendar{width:130px!important;background:url(../images/calendar_icon.png) 108px center no-repeat; background-color:#fff;}
+
+
+.btn.active, .btn:active { background-image: none; outline: 0; -webkit-box-shadow: none; box-shadow: none; }
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus { outline: none; outline: none; outline-offset:initial; }
+
+.btn-default { color: #fff; background-color: #61c6d0; border-color: #6fbebb; border-radius:0px;}
+.btn-default:focus{ background-color: #61c6d0; border-color: #6fbebb;color: #fff; }
+.btn-default:hover { color: #fff; background-color: #71dbe5; border-color: #6fbebb; }
+.btn-default:active { color: #fff; background-color: #71dbe5; border-color: #6fbebb; background-image: none;}
+.btn-default:active:hover,
+.btn-default:active:focus{ color: #fff; background-color: #61c6d0; border-color: #61c6d0; }
+
+
+.btn-primary { color: #fff; background-color: #f06a28; border-color: #f06a28; }
+.btn-primary:focus{ color: #fff; background-color: #f06a28; border-color: #f06a28; }
+.btn-primary:hover { color: #fff; background-color: #ff8743; border-color: #ff8743; }
+.btn-primary:active{ color: #fff; background-color: #ff8743; border-color: #ff8743;background-image: none; }
+.btn-primary:active:hover,
+.btn-primary:active:focus { color: #fff; background-color: #f06a28; border-color: #f06a28; }
+
+.btn-white { color: #78787f; background-color: #fff; border-color: #fff; }
+.btn-white:focus{ color: #78787f; background-color: #fff; border-color: #fff; }
+.btn-white:hover { color: #78787f; background-color: #e2e2e2; border-color: #e2e2e2; }
+.btn-white:active{ color: #78787f; background-color: #e2e2e2; border-color: #e2e2e2;background-image: none; }
+.btn-white:active:hover,
+.btn-white:active:focus { color: #78787f; background-color: #fff; border-color: #fff; }
+
+.btn_search{background-color:#e89e37;color:#fff;border-radius:0;padding-left:35px;padding-right:25px;background-image:url(../images/search_icon.png);background-position:15px center;background-repeat:no-repeat;}
+.btn_search:focus{color: #fff; background-color:#e89e37;border-color:#e89e37; }
+.btn_search:active {color: #fff; background-color:#ffb851;border-color:#ffb851; background-image:url(../images/search_icon.png); outline: 0; -webkit-box-shadow: none; box-shadow: none;}
+.btn_search:hover { color: #fff; text-decoration: none; background-color:#ffb851; }
+
+.nav_title{margin-top:15px;margin-bottom:15px;}
+.nav_title,.nav_title a { color:#888;font-size:14px;line-height:28px;}
+
+.basic_block{margin-top:15px;margin:15px 0 0;}
+.basic_block .basic_block_con{background-color:#fff;border-radius:8px;min-height:30px;overflow:hidden;border: 1px #dcdcdc solid;padding:15px;}
+
+.basic_block h1.block_title{font-size:14px;font-weight:500;padding:15px 0;border-bottom:1px #e8e8e8 solid;margin-bottom:15px;}
+
+.tabs{background-color:#f7f7f7;height:40px;line-height:40px;margin:0;margin-left:-15px;margin-right:-15px;}
+.tabs li{float:left;}
+.tabs li a{padding:0 25px;cursor:pointer;color:#aeaeae;line-height:40px;display:block;}
+.tabs li:hover a,
+.tabs li.active a{color:#2a313b;font-weight:bold;background-color:#fff;border-top:2px #3eb0cc solid;}
+
+.tabs_con{padding:15px 0;display:none;margin-top:-1px;}
+.tabs_con.active{display:block;}
+.fun_panel{border:1px #ecebeb solid;background-color:#f8f8f8;padding:15px;}
+
+.pagination_wrap{text-align:center;}
+
+.table>thead>tr>th {border-bottom:1px solid #61c6d0;font-weight:normal;color:#61c6d0;}
+.table > tbody > tr > td { border-top: 1px solid #edeef2; }
+
+.error{position:relative;}
+.error .error-msg{color: #a94442;position:absolute;right:0;margin-top:5px;display: block;}
+.form-group .error .error-msg{right:15px;}
+.form-group .help-block{margin-bottom: 0;}
+
+.upload_imgs{margin-left:-15px;}
+.upload_imgs .upload_item{float:left;width:288px;height:193px;border:1px #e3e5e9 solid;margin-left:15px;position:relative;margin-top:15px;}
+.upload_imgs .upload_item .img{border-bottom:1px #e3e5e9 solid;box-sizing:border-box;text-align:center;overflow:hidden;table-layout: fixed;width:286px;height:117px;}
+.upload_imgs .upload_item .img .cell{display:table-cell;vertical-align:middle;height:117px;width:286px;} 
+.upload_imgs .upload_item img{max-height:100%;max-width:100%;}
+.upload_imgs .upload_item .desc{color:#aeaeae;padding:10px;box-sizing:border-box;max-height:100%;font-size:12px;line-height:18px;}
+.upload_imgs .upload_item i.del{background:url(../images/del_icon.png) center no-repeat;width:22px;height:22px;position:absolute;right:5px;top:5px;}
+.upload_imgs .upload_item textarea{width:100%;height:52px;line-height:18px;font-size:12px;border:none;}
+.upload_imgs .upload_btn{display:block;padding-left:20px;background:url(../images/upload_icon.png) left center no-repeat;width:80px;margin:0 auto;}
+
+.choose_amount{width:160px;height:30px;border:1px #d3d3d3 solid;}
+.choose_amount .btn_reduce,
+.choose_amount .btn_add{float:left;box-sizing:border-box;width:28px;height:28px;text-align:center;line-height:25px;color:#fff;background-color:#61c6d0;font-size:18px;}
+.choose_amount .btn_reduce { border-right:1px #d3d3d3 solid;}
+.choose_amount .btn_add{border-left:1px #d3d3d3 solid;float:right;}
+.choose_amount .btn_reduce.disable,.choose_amount .btn_add.disable{color:#d3d3d3;background-color:#fff;}
+.choose_amount .text{float:left;width:100px;height:28px;line-height:28px;border:none;outline:none;text-align:center;}

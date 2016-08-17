@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="renderer" content="webkit">
+    <title>后台管理-首页</title>
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="lib/normalize.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="lib/html5shiv.min.js"></script>
+      <script src="lib/respond.min.js"></script>
+    <![endif]-->
+    <script src="lib/jquery.min.js"></script>
+    <script>
+        function resizeIframe() {
+            var iframeid = document.getElementById("to_right"); //iframe id 
+            if (document.getElementById) {
+                if (iframeid && !window.opera) {
+                    if (iframeid.contentDocument && iframeid.contentDocument.body.offsetHeight) {
+                        iframeid.height = iframeid.contentDocument.body.offsetHeight;
+                    } else if (iframeid.Document && iframeid.Document.body.scrollHeight) {
+                        iframeid.height = iframeid.Document.body.scrollHeight;
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="index">
+    <div class="container-fluid" style="min-width:1000px;">       
+        <div class="row top_bar">
+            <div class="col-md-6 logo">
+                <div class="logo_cell">
+                    <img src="images/logo.png" />
+                </div>
+            </div>
+            <div class="col-md-6 account">
+                <a href="#">admin</a> <a href="#">退出</a>
+            </div>
+        </div>
+        <div class="row main">
+            <div class="left">
+                <dl class="active">
+                    <dt><a target="to_right">我的快捷菜单</a></dt>
+                    <dd><a href="form.html" target="to_right">渠道管理</a></dd>
+                    <dd><a href="list.html" target="to_right">新增渠道</a></dd>                    
+                </dl>
+                <dl>
+                    <dt><a target="to_right" href="template.html">基础组件</a></dt>                    
+                </dl>
+            </div>
+            <div class="right">
+                <iframe class="content_iframe" allowtransparency="true" src="template.html" id="to_right" width="100%" name="to_right" frameborder="0" scrolling="yes" onload="resizeIframe()" style="min-height:1000px;"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

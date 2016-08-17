@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="renderer" content="webkit">
+    <title>后台管理-登录</title>
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="lib/normalize.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="lib/html5shiv.min.js"></script>
+      <script src="lib/respond.min.js"></script>
+    <![endif]-->    
+    <script src="lib/common.js"></script>
+    
+</head>
+<body class="login">
+    <div class="container-fluid">
+        <div id="LoginElement" class="login_c">
+            <h2>后台管理</h2>
+            <div class="login_type">
+                <div class="login_input username">
+                    <input type="text" placeholder="用户名" ng-model="loginData.userName" ng-keydown="keydown($event)" class="ng-pristine ng-untouched ng-valid">
+                </div>
+                <div class="login_input password focus">
+                    <input type="password" placeholder="密码" class="text-input ng-pristine ng-untouched ng-valid" ng-model="loginData.password" ng-keydown="keydown($event)">
+                </div>
+
+            </div>
+
+            <div class="login_type">
+                <input type="button" class="login_btn" value="登&nbsp;&nbsp;&nbsp;&nbsp;录" ng-click="login()">
+                <div ng-bind-html="message" class="loginerror margintop ng-binding"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
